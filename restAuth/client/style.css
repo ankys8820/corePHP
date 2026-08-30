@@ -1,0 +1,14 @@
+   h1{
+            text-align: center;
+            margin-top: 25px;
+        }
+        button{
+            width : 150px;
+            height: 80px;
+            font-size: 1.2rem;
+            margin-top: 10%;
+
+        }
+        div{
+            text-align: center;
+        }
