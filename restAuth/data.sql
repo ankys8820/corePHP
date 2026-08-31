@@ -14,6 +14,10 @@ password VARCHAR(255) NOT NULL,
 r_password VARCHAR(255) NOT NULL
 );
 
+SHOW TABLES;
+
+DESC users;
+
 SELECT * FROM users;
 
 
