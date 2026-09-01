@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singup</title>
     <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      /* .main {
+        width: 200px;
+        height: 100px;
+      } */
+
       h2 {
         text-align: center;
         margin-top: 25px;
@@ -18,37 +29,53 @@
         width: 50vw;
         margin: auto;
       }
+      .home-link {
+        font-size: 32px;
+      }
     </style>
   </head>
 
   <body>
-    <h2>Signup</h2>
-    <form action="">
-      <div>
-        <label for="">First Name</label>
-        <input type="text" name="fName" id="" />
-      </div>
-      <div>
-        <label for="">Last Name</label><input type="text" name="lName" id="" />
-      </div>
-      <div>
-        <label for="">User Name</label
-        ><input type="text" name="userName" id="" />
-      </div>
-      <div>
-        <label for="">Email</label><input type="text" name="email" id="" />
-      </div>
-      <div>
-        <label for=""> Password </label
-        ><input type="password" name="pwd" id="" />
-      </div>
-      <div>
-        <label for="">Repeat Password</label>
-        <input type="password" name="rPwd" id="" />
-      </div>
-      <div><input type="hidden" name="" value="signup" /></div>
-      <div><input type="submit" value="Signup" /></div>
-    </form>
-    <script src="signup.js"></script>
+    <div class="main">
+      <a class="home-link" href="http://localhost/corePHP/restAuth/client"
+        >🏠</a
+      >
+      <h2>Signup</h2>
+      <form onsubmit="return false;">
+        <div>
+          <label for="">First Name</label>
+          <input type="text" name="fName" id="" />
+        </div>
+        <div>
+          <label for="">Last Name</label
+          ><input type="text" name="lName" id="" />
+        </div>
+        <div>
+          <label for="">User Name</label
+          ><input type="text" name="userName" id="" />
+        </div>
+        <div>
+          <label for="">Email</label><input type="text" name="email" id="" />
+        </div>
+        <div>
+          <label for=""> Password </label
+          ><input type="password" name="pwd" id="" />
+        </div>
+        <div>
+          <label for="">Repeat Password</label>
+          <input type="password" name="rPwd" id="" />
+        </div>
+        <div>
+          <input type="hidden" id="crud_req" name="crud_req" value="signup" />
+        </div>
+        <div><input type="submit" value="Signup" /></div>
+
+        <p>
+          If already have an account with us!
+          <a href="./login.html">click here.</a>
+        </p>
+      </form>
+      <script src="signup.js"></script>
+    </div>
   </body>
 </html>
